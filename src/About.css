@@ -1,0 +1,22 @@
+/* About.css */
+
+/* Flowing RGB Border Effect Animation */
+.animate-border {
+  width: calc(100% + 8px); /* To account for the border size */
+  height: calc(100% + 8px);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border-radius: 0.5rem;
+  border: 4px solid transparent;
+  animation: flowing-border 5s linear infinite alternate;
+}
+
+@keyframes flowing-border {
+  0% {
+    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #0000ff, #ff0000, #00ff00);
+  }
+}
